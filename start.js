@@ -22,6 +22,9 @@ function init () {
                     if(posterimg === '') return
                     try {
                         title = title.replace(/[\s\/\\]/, '')
+                        if (!fs.existsSync('./data/')) {
+                            fs.mkdirSync('./data/');
+                        }
                         let ws = title && fs.createWriteStream(`./data/${title}.txt`)
                         var imgurl = posterimg && posterimg.attr('src')
                         let imgws = fs.createWriteStream(`./data/${title}.png`)
