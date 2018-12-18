@@ -5,9 +5,9 @@ npm run start
 ```
 抓取的电影图片以及简介信息等放在data目录下，每次执行`npm run start`都会清空上一次抓取的数据，再重新爬取
 
-![目录截图]('./images/folder.png')
+![目录截图](./images/folder.png)
 
-![详情文本截图]('./images/text.png')
+![详情文本截图](./images/text.png)
 ### fs.createWriteStream
 fs.createWriteStream 似乎不会自己创建不存在的文件夹，所以在使用之前需要注意，保存文件的文件夹一定要提前创建。
 ```
