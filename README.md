@@ -5,7 +5,7 @@ npm run start
 ```
 抓取的电影图片以及简介信息等放在data目录下，每次执行`npm run start`都会清空上一次抓取的数据，再重新爬取
 
-![目录截图](./images/folder.png)
+![目录截图](./images/demo.png)
 
 ![详情文本截图](./images/text.png)
 ### fs.createWriteStream
